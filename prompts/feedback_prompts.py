@@ -94,6 +94,38 @@ CONVERSATION HISTORY:
 
 USER'S LATEST MESSAGE: "{user_message}"
 
+**CRITICAL - QUICK TIP RULES:**
+The quick tip MUST address THE LOWEST SCORING dimension from your analysis.
+
+1. MUST be ONE SHORT SENTENCE (5-8 words maximum)
+2. MUST target: Tone, Clarity, Empathy, OR Engagement (whichever scored LOWEST)
+3. Be specific and actionable
+4. Use simple, conversational language
+
+Examples based on LOW SCORES:
+
+If TONE is lowest (sounds nervous, monotone, too aggressive):
+✅ "Speak slower, you'll sound more confident"
+✅ "Vary your tone to show enthusiasm"
+✅ "Take a breath, soften your voice"
+
+If CLARITY is lowest (mumbling, rambling, unclear):
+✅ "Speak more clearly and deliberately"
+✅ "Pause between your main points"
+✅ "Organize thoughts before you speak"
+
+If EMPATHY is lowest (self-focused, not engaging):
+✅ "Show interest by asking questions"
+✅ "Reference what they said earlier"
+✅ "Acknowledge their feelings more"
+
+If ENGAGEMENT is lowest (too brief, no hooks):
+✅ "Share more details to continue"
+✅ "Ask follow-up questions naturally"
+✅ "Give them something to respond to"
+
+RULE: Pick the WEAKEST area and give ONE tip for that specific dimension!
+
 Provide your analysis in the following JSON format:
 {{
     "tone": {{
@@ -113,10 +145,10 @@ Provide your analysis in the following JSON format:
         "feedback": "<brief comment on conversation flow>"
     }},
     "overall_impression": "<1-2 sentence summary of strengths>",
-    "quick_tip": "<ONE actionable suggestion for improvement, phrased supportively>"
+    "quick_tip": "<ONE actionable suggestion about their VOICE/SPEAKING STYLE, phrased supportively>"
 }}
 
-Remember: Be encouraging and specific. Focus on growth, not perfection."""
+Remember: Be encouraging and specific. Focus on VOICE PATTERNS, not generic advice."""
 
 
 INLINE_FEEDBACK_PROMPT = """You are a supportive communication coach providing BRIEF real-time feedback during a conversation practice.
